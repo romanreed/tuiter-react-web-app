@@ -8,47 +8,53 @@
     <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
   </head>
 <body>
+  <div class="d-block d-sm-none fa-2x">XS</div>
+<div class="d-none d-sm-block d-md-none fa-2x">S</div>
+<div class="d-none d-md-block d-lg-none fa-2x">M</div>
+<div class="d-none d-lg-block d-xl-none fa-2x">L</div>
+<div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
+<div class="d-none d-xxl-block fa-2x">XXL</div>
   <div class="container">
     <div class="row">
-        <div class="col-3 bg-white sidebar">
+        <div class="col-xl-2 col-lg-1 col-2 col-bg-white sidebar align-items-center">
             <div class="list-group list-group-flush border">
             <a href="#" class="list-group-item list-group-item-action">
                 <i class="fab fa-twitter"></i>
             </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-home"></i> <span class="d-none d-xl-inline-block">&nbsp; Home </span>
+            </a>
             <a href="#" class="list-group-item list-group-item-action active">
-              <i class="fas fa-hashtag"></i> Explore
+              <i class="fas fa-hashtag"></i><span class="d-none d-xl-inline-block">&nbsp; Explore </span>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <i class="fas fa-home"></i> Home
+              <i class="fas fa-bell"></i> <span class="d-none d-xl-inline-block">&nbsp; Notifications </span>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <i class="fas fa-bell"></i> Notifications
+              <i class="fas fa-envelope"></i> <span class="d-none d-xl-inline-block">&nbsp; Messages </span>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <i class="fas fa-envelope"></i> Messages
+              <i class="fas fa-bookmark"></i> <span class="d-none d-xl-inline-block">&nbsp; Bookmarks </span>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <i class="fas fa-bookmark"></i> Bookmarks
+              <i class="fas fa-list"></i> <span class="d-none d-xl-inline-block">&nbsp; Lists </span>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <i class="fas fa-list"></i> Lists
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <i class="fas fa-user"></i> Profile
+              <i class="fas fa-user"></i> <span class="d-none d-xl-inline-block">&nbsp; Profile </span>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
                 <span class="fa-stack" style="font-size: 0.6em;">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse"></i>
                 </span>
-                More
+                <span class="d-none d-xl-inline-block">&nbsp; More </span>
               </a>
           </div>
-          <a href="#" class="justify-content-center p-3 mt-3 d-flex align-items-center bg-primary rounded-pill text-white text-center" style="height: 10%; font-size: 20px; text-decoration: none;">
+          <a href="#" class="justify-content-center p-3 mt-3 d-flex align-items-center bg-primary rounded-pill text-white text-center" style="height: 40px; font-size: 20px; text-decoration: none;">
             Tuit
           </a>
         </div>
-        <div class="col-6 main-content">
+        <div class="col-xl-6 col-lg-7 col-10">
           <div class="d-flex align-items-center mt-3 mb-3">
             <div class="input-group form-control-sm mr-3 rounded-pill border">
               <div class="input-group-prepend">
@@ -56,9 +62,9 @@
                   <i class="fas fa-search"></i>
                 </span>
               </div>
-              <input type="text" class="form-control border-0 rounded-pill" placeholder="Search">
+              <input type="text" class="form-control border-0 rounded-pill" placeholder="Search Tuiter">
             </div>
-            &nbsp; &nbsp; 
+            &nbsp; &nbsp;
             <div class="ml-3">
               <a href="#">
                 <i class="fas fa-cog fa-2x" style="color: rgb(0, 81, 255)"></i>
@@ -74,13 +80,127 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">News</a>
-            </li>  
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Sports</a>
-            </li>  
+            </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Entertainment</a>
-            </li>  
+              <a class="nav-link d-none d-md-inline-block" href="#">Entertainment</a>
+            </li>
+          </ul>
+          <div class="card" style="width: 100%;">
+            <img src="../../images/spacexStarShip.jpg"
+                 class="card-img-top">
+              <div class="card-img-overlay d-flex align-items-end" style="font-size: 30px;">
+                <b class="text-white">SpaceX's starship</b>
+              </div>
+         </div>
+         <div class="border">
+          <div class="d-flex ps-3 p-2 border-bottom justify-content-between">
+            <div>
+              <span style="color: gray">Web Development</span> <br>
+              <b>ReactJS</b> <i class="fas fa-check-circle"></i>
+              <span style="color: gray"> - 2H</span><br>
+              <b>React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</b>
+            </div>
+            <div>
+              <img src="../../images/reactJS.png" class="rounded" style="width: 90px; height: 90px;">
+            </div>
+          </div>
+          <div class="d-flex ps-3 p-2 border-bottom justify-content-between">
+            <div>
+              <b>JavaScript</b> <i class="fas fa-check-circle"></i>
+              <span style="color: gray"> - 2H</span><br>
+              <b>JavaScript is programming language that can run on browsers as well as desktops</b> <br>
+              <span style="color: gray">123K Tweets</span>
+            </div>
+            <div>
+              <img src="../../images/jsLogo.png" class="rounded" style="width: 90px; height: 90px;">
+            </div>
+          </div>
+          <div class="d-flex ps-3 p-2 border-bottom justify-content-between">
+            <div>
+              <span style="color: gray">Web Development</span> <br>
+              <b>jQuery</b> <br>
+              <span style="color: gray">123K Tweets</span>
+            </div>
+            <div>
+              <img src="../../images/jQueryLogo.png" class="rounded" style="width: 90px; height: 90px;">
+            </div>
+          </div>
+          <div class="d-flex ps-3 p-2 justify-content-between">
+            <div>
+              <span style="color: gray">Web Development</span> <br>
+              <b>NodeJS</b> <i class="fas fa-check-circle"></i>
+              <span style="color: gray"> - 2H</span><br>
+              <span style="color: gray">123K Tweets</span>
+            </div>
+            <div>
+              <img src="../../images/nodeJS.png" class="rounded" style="width: 90px; height: 90px;">
+            </div>
+          </div>
         </div>
+    </div>
+    <div class="col-4 d-none d-lg-block bg-white sidebar">
+      <div class="list-group list-group-flush border">
+        <span class="list-group-item">
+          <b>Who to follow</b>
+        </span>
+        <div class="list-group-item d-flex justify-content-between align-items-center">
+          <div class="d-flex">
+            <img src="../../images/javaLogo.png" alt="Placeholder" class="rounded-circle mr-3" style="width: 50px; height: 50px;">
+            &nbsp; &nbsp;
+            <div class="d-flex flex-column text-nowrap">
+              <div><b>Java</b> <i class="fas fa-check-circle"></i></div>
+              <div class="text-muted">@Java</div>
+            </div>
+          </div>
+          <a href="#" class="btn rounded-pill btn-primary">Follow</a>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-center">
+          <div class="d-flex">
+            <img src="../../images/RelativityspaceLogo.png" alt="Placeholder" class="rounded-circle mr-3" style="width: 50px; height: 50px;">
+            &nbsp; &nbsp;
+            <div class="d-flex flex-column text-nowrap">
+              <div><b>Relativity Space</b> <i class="fas fa-check-circle"></i></div>
+              <div class="text-muted">@relativityspace</div>
+            </div>
+          </div>
+          <a href="#" class="btn rounded-pill btn-primary">Follow</a>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-center">
+          <div class="d-flex">
+            <img src="../../images/Virgin Galactic Logo.png" alt="Placeholder" class="rounded-circle mr-3" style="width: 50px; height: 50px;">
+            &nbsp; &nbsp;
+            <div class="d-flex flex-column text-nowrap">
+              <div><b>Virgin Galactic</b> <i class="fas fa-check-circle"></i></div>
+              <div class="text-muted">@virgingalactic</div>
+            </div>
+          </div>
+          <a href="#" class="btn rounded-pill btn-primary">Follow</a>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-center">
+          <div class="d-flex">
+            <img src="../../images/NASALogo.png" alt="Placeholder" class="rounded-circle mr-3" style="width: 50px; height: 50px;">
+            &nbsp; &nbsp;
+            <div class="d-flex flex-column text-nowrap">
+              <div><b>NASA</b> <i class="fas fa-check-circle"></i></div>
+              <div class="text-muted">@NASA</div>
+            </div>
+          </div>
+          <a href="#" class="btn rounded-pill btn-primary">Follow</a>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-center">
+          <div class="d-flex">
+            <img src="../../images/teslaLogo.png" alt="Placeholder" class="rounded-circle mr-3" style="width: 50px; height: 50px;">
+            &nbsp; &nbsp;
+            <div class="d-flex flex-column text-nowrap">
+              <div><b>Tesla</b> <i class="fas fa-check-circle"></i></div>
+              <div class="text-muted">@Tesla</div>
+            </div>
+          </div>
+          <a href="#" class="btn rounded-pill btn-primary">Follow</a>
+        </div>
+      </div>
     </div>
 </body>
