@@ -4,10 +4,10 @@ const ExploreComponent = () => {
     return(`
             <div class="row">
                 <div class="d-flex align-items-center mt-3 mb-3">
-                <div class="input-group form-control-sm mr-3 rounded-pill border">
+                <div class="input-group form-control-sm mr-3 bg-white rounded-pill border">
                 <div class="input-group-prepend">
                     <span class="input-group-text bg-white border-0">
-                    <i class="fas fa-search"></i>
+                    <i class="fas fa-search " style="color: gray; font-size: 1.25em;"></i>
                     </span>
                 </div>
                 <input type="text" class="form-control border-0 rounded-pill" placeholder="Search Tuiter">
@@ -15,7 +15,7 @@ const ExploreComponent = () => {
                 &nbsp; &nbsp;
                 <div class="ml-3">
                 <a href="#">
-                    <i class="fas fa-cog fa-2x" style="color: rgb(0, 81, 255)"></i>
+                    <i class="fas fa-cog fa-2x" style="color: active"></i>
                 </a>
                 </div>
             </div>
