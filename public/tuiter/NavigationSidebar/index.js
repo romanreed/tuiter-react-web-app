@@ -24,6 +24,13 @@ const NavigationSidebar = () => {
             <a href="#" class="list-group-item list-group-item-action">
               <i class="fas fa-user"></i> <span class="d-none d-xl-inline-block">&nbsp; Profile </span>
             </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <span class="fa-stack" style="font-size: 0.6em;">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-ellipsis-h fa-stack-1x" style="color: darkgray"></i>
+                </span>
+                <span class="d-none d-xl-inline-block">&nbsp; More </span>
+            </a>
       </div>
       <div class="d-grid mt-2">
         <a href="tweet.html"
