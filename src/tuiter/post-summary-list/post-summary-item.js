@@ -10,7 +10,7 @@ const PostSummaryItem = (
             <div style={{ color: 'gray' }}>{post.userName}</div>
             <b>{post.topic}</b> <i className="fas fa-check-circle"></i>
             <span style={{ color: 'gray' }}> - {post.time}</span><br/>
-            <b>{post.title}</b>
+            {post.title}
             <div style={{ color: 'gray' }}>{post.tweets ? post.tweets : ''} {post.tweets ? "Tweets": ''}</div>
         </div>
         <div>
