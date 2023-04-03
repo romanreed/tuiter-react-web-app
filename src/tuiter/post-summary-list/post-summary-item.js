@@ -1,4 +1,5 @@
 import React from "react";
+
 const PostSummaryItem = (
     {
       post = { topic: 'Topic', userName: 'User Name', time: 'Time', title: 'Title', tweets: 'Tweets', image: 'Image'}

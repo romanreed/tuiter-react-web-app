@@ -10,8 +10,9 @@ import { configureStore }
   from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
 const store = configureStore(
-  {reducer: {who: whoReducer, tuits: tuitsReducer}});
+  {reducer: {who: whoReducer, tuitsData: tuitsReducer}});
 
+console.log(store.getState());
 function Tuiter() {
  return (
   <Provider store={store}>

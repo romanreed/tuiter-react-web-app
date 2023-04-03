@@ -1,6 +1,7 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "./tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
+
 const TuitItem = (
     {
       post = { topic: 'Topic', userName: 'User Name', time: 'Time', title: 'Title', replies: 'Replies', image: 'Image'}
@@ -8,7 +9,7 @@ const TuitItem = (
    ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
     return(
     <span style={{border: '1px solid lightgray'}}>
